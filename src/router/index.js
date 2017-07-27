@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import hi from '@/components/hi'
+import Home from '../components/Home'
 
-Vue.use(Router)
+Vue.config.debug = true
 
 export default new Router({
   routes: [
     {
       path: '/',
       name: 'Hello',
-      component: hi
+      component: Home
     }
   ]
 })

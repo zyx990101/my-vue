@@ -1,22 +1,45 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div>
+    <Home></Home>
   </div>
 </template>
 
 <script>
+import demotwo from './components/demotwo.vue'
+import hi from './components/hi.vue'
+import Home from './components/Home.vue'
+import Header from './components/common/Header.vue'
+import SideBar from './components/SideBar.vue'
+import card from './components/card.vue'
+
 export default {
-  name: 'app'
+  data () {
+    return {
+      boo: true
+    }
+  },
+  components: {hi, demotwo, Home, Header, SideBar, card}
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.active {
+  width: 1520px;
+  background: #efefef;
+  height: 200px
+}
+
+.left {
+  float: left;
+  width: 300px
+}
+
+.right {
+  float: right;
+  width: 300px
+}
+
+.active2 {
+
 }
 </style>
